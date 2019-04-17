@@ -26,7 +26,8 @@ function task3(){
 	var c = prompt();
 	sum = +a + +b + +c;
 	ser = sum / 3;
-	document.write("(" + a + "+" + b + "+" + c + ") / 3" + "=" + ser.tofixed(3)).getElementById('window');
+	serfix = sum.toFixed(3);
+	document.getElementById('window').write("(" + a + "+" + b + "+" + c + ") / 3" + "=" + serfix);
 }
 function task4(){
 	var num = prompt();
