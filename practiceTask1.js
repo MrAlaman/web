@@ -15,9 +15,11 @@ function task2() {
 	sum = +a + +b + +c;
 	dob = a * b * c;
 	ser = sum / 3;
-	document.write(a + "+" + b + "+" + c + "=" + sum );
-	document.write(a + "*" + b + "*" + c + "=" + dob );
-	document.write("(" + a + "+" + b + "+" + c + ") / 3" + "=" + ser);
+	var window = document.getElementById('window');
+	result1 = a + "+" + b + "+" + c + "=" + sum ;
+	result2 = a + "*" + b + "*" + c + "=" + dob ;
+	result3 = "(" + a + "+" + b + "+" + c + ") / 3" + "=" + ser;
+	window.innerHTML = result1 + result2 + result3; 
 }
 function task3(){
 	var sum, ser;
