@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     border-radius: 10px;
     margin: 5px;
@@ -18,3 +19,25 @@
     cursor: pointer;
 }
 
+=======
+*{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.position{
+    display: flex;
+}
+
+.task{
+    width: 30%;
+    height: 2rem;
+    background-color: #fff2cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d3b24f;
+    cursor: pointer;
+}
+
+>>>>>>> 2e0bed52f2da4a010c179474d4d36b1b57b21572
