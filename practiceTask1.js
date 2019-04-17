@@ -27,7 +27,9 @@ function task3(){
 	sum = +a + +b + +c;
 	ser = sum / 3;
 	serfix = sum.toFixed(3);
-	document.getElementById('window').write("(" + a + "+" + b + "+" + c + ") / 3" + "=" + serfix);
+	var window = document.getElementById('window');
+	var result = "(" + a + "+" + b + "+" + c + ") / 3" + "=" + serfix;
+	window.innerHTML = result;
 }
 function task4(){
 	var num = prompt();
@@ -35,7 +37,7 @@ function task4(){
 	prev = num--;
 	next = num ++;
 	document.write("The next number for the number" + num + "is" + next);
-	document.write("The previous number for the number" + num "is" + prev);
+	document.write("The previous number for the number" + num + "is" + prev);
 }
 function task5(){
 	var a = prompt();
