@@ -19,7 +19,7 @@ function task2() {
 	result1 = a + "+" + b + "+" + c + "=" + sum ;
 	result2 = a + "*" + b + "*" + c + "=" + dob ;
 	result3 = "(" + a + "+" + b + "+" + c + ") / 3" + "=" + ser;
-	window.innerHTML = result1 + result2 + result3; 
+	window.innerHTML = result1 + "<br>" + result2 + "<br>" + result3; 
 }
 function task3(){
 	var sum, ser;
@@ -28,7 +28,7 @@ function task3(){
 	var c = prompt();
 	sum = +a + +b + +c;
 	ser = sum / 3;
-	serfix = ser.toFixed(3);
+	var serfix = ser.toFixed(3);
 	var window = document.getElementById('window');
 	var result = "(" + a + "+" + b + "+" + c + ") / 3" + "=" + serfix;
 	window.innerHTML = result;
@@ -38,8 +38,10 @@ function task4(){
 	var prev, next;
 	prev = num--;
 	next = num ++;
-	document.write("The next number for the number" + num + "is" + next);
-	document.write("The previous number for the number" + num + "is" + prev);
+	var window = document.getElementById('window');
+	var result1 = "The next number for the number" + num + "is" + next;
+	var result2 = "The previous number for the number" + num + "is" + prev;
+	window.innerHTML = result1 + "<br>" + result2;
 }
 function task5(){
 	var a = prompt();
@@ -47,6 +49,9 @@ function task5(){
 	var temp = a;
 	a = b;
 	b = temp;
-	document.write("a = " + a);
-	document.write("b = " + b);
+	var window = document.getElementById('window');
+	var result1 = "a = " + a;
+	var result2 = "b = " + b;
+	window.innerHTML = result1 + "<br>" + result2;
+
 }
