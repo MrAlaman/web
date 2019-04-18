@@ -104,5 +104,11 @@ function task10(){
 	min = (n % 3600) / 60;
 	sec = (n % 3600) % 60;
 	var window = document.getElementById('window');
-	window.innerHTML = hours + " : " + min + " : " + sec; 
+	window.innerHTML = ~~hours + " : " + ~~min + " : " + sec; 
+}
+function task11(){
+	var year = prompt();
+	var result = return((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+	var window = document.getElementById('window');
+	window.innerHTML = result;
 }
