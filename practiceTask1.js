@@ -36,11 +36,11 @@ function task3(){
 function task4(){
 	var num = prompt();
 	var prev, next;
-	prev = num--;
-	next = num ++;
+	prev = +num - 1;
+	next = +num + 1;
 	var window = document.getElementById('window');
-	var result1 = "The next number for the number" + num + "is" + next;
-	var result2 = "The previous number for the number" + num + "is" + prev;
+	var result1 = "The next number for the number " + num + " is " + next;
+	var result2 = "The previous number for the number " + num + " is " + prev;
 	window.innerHTML = result1 + "<br>" + result2;
 }
 function task5(){
@@ -95,5 +95,5 @@ function task9(){
 		hours = hours - 24;
 	}
 	var window = document.getElementById('window');
-	window.innerHTML = hours + " : " + minutes;
+	window.innerHTML = ~~hours + " : " + minutes;
 }
