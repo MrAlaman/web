@@ -97,3 +97,12 @@ function task9(){
 	var window = document.getElementById('window');
 	window.innerHTML = ~~hours + " : " + minutes;
 }
+function task10(){
+	var n = prompt();
+	var sec, min, hours;
+	hours = n / 3600;
+	min = (n % 3600) / 60;
+	sec = (n % 3600) % 60;
+	var window = document.getElementById('window');
+	window.innerHTML = hours + " : " + min + " : " + sec; 
+}
