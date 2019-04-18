@@ -108,7 +108,7 @@ function task10(){
 }
 function task11(){
 	var year = prompt();
-	var result = return((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+	var result = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 	var window = document.getElementById('window');
 	window.innerHTML = result;
 }
