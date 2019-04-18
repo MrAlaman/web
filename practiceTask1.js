@@ -53,5 +53,47 @@ function task5(){
 	var result1 = "a = " + a;
 	var result2 = "b = " + b;
 	window.innerHTML = result1 + "<br>" + result2;
-
+}
+function task6(){
+	var a = prompt();
+	var b = prompt();
+	var c = prompt();
+	var temp = a;
+	a = c;
+	c = b;
+	b = temp;
+	var window = document.getElementById('window');
+	var result1 = "a = " + a;
+	var result2 = "b = " + b;
+	var result3 = "c = " + c;
+	window.innerHTML = result1 + '<br>' + result2 + '<br>' + result3;
+}
+function task7(){
+	var byte = prompt();
+	var kbyte = byte / 1024;
+	var window = document.getElementById('window');
+	result = ~~kbyte + " kByte";
+	window.innerHTML = result;
+}
+function task8(){
+	var a = prompt();
+	var b = Math.floor(a / 100); 
+	var c = a - b * 100; 
+	var d = Math.floor(c / 10); 
+	var e = c - d * 10; 
+	var result1 = b + d + e; 
+	var result2 = b * d * e;
+	var window = document.getElementById('window');
+	window.innerHTML = "Сума = " + result1 + '<br>' + "Добуток = " + result2;
+}
+function task9(){
+	var data = prompt();
+	var hours, minutes;
+	hours = data / 60;
+	minutes = data % 60;
+	while( hours > 24){
+		hours = hours - 24;
+	}
+	var window = document.getElementById('window');
+	window.innerHTML = hours + " : " + minutes;
 }
